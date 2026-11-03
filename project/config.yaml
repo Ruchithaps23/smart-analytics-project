@@ -1,0 +1,61 @@
+# Central configuration (Task 2: cross-cutting configuration)
+paths:
+  raw: data/raw
+  processed: data/processed
+  models: models
+  results: results
+  logs: logs
+default_dataset: data/raw/store_sales_data.csv
+
+expected_columns:
+  - Customer ID
+  - Customer Name
+  - Last Name
+  - Date of Birth
+  - Sales
+  - Year
+  - Outlet Type
+  - City Type
+  - Category of Goods
+  - Region
+  - Country
+  - Segment
+  - Sales Date
+  - Order ID
+  - Order Date
+  - Ship Date
+  - Ship Mode
+  - State
+  - Postal Code
+  - Product ID
+  - Sub-Category
+  - Product Name
+  - Quantity
+  - Discount
+  - Profit
+
+date_columns: [Date of Birth, Sales Date, Order Date, Ship Date]
+text_columns: [Postal Code]
+
+# Rules used by DataQualityChecker / DataCleaner
+rules:
+  discount_range: [0.0, 0.5]
+  min_quantity: 1
+  min_adult_age: 18
+  authoritative_date: Sales Date       # decision from Task 1 data-quality analysis
+
+# Expected region for each state (editable; used only to FLAG inconsistencies)
+state_region:
+  Delhi: North
+  Punjab: North
+  Rajasthan: North
+  Uttar Pradesh: North
+  Gujarat: West
+  Maharashtra: West
+  Madhya Pradesh: West
+  Karnataka: South
+  Tamil Nadu: South
+  West Bengal: East
+
+# Columns hidden from the dashboard for privacy (Task 2, section 8)
+private_columns: [Customer Name, Last Name, Date of Birth]

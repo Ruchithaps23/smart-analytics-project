@@ -1,0 +1,7 @@
+[
+  "Cast date columns to datetime and Postal Code to text",
+  "Removed 0 duplicate records",
+  "Handled 0 missing cells (numeric median fill; rows without Sales Date dropped)",
+  "Created sales_date_dt from Sales Date (authoritative date)",
+  "Flagged 49890 date conflicts, 75144 Region/State mismatches, 21943 minors"
+]

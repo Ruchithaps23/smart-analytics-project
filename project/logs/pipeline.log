@@ -1,0 +1,40 @@
+2026-10-20 06:09:22,004 | M1 load_file finished in 0.34s
+2026-10-20 06:09:22,260 | M1 quality report finished in 0.15s
+2026-10-20 06:09:22,414 | M2 clean finished in 0.15s
+2026-10-20 06:09:22,414 | M2 Cast date columns to datetime and Postal Code to text
+2026-10-20 06:09:22,414 | M2 Removed 0 duplicate records
+2026-10-20 06:09:22,414 | M2 Handled 0 missing cells (numeric median fill; rows without Sales Date dropped)
+2026-10-20 06:09:22,414 | M2 Created sales_date_dt from Sales Date (authoritative date)
+2026-10-20 06:09:22,414 | M2 Flagged 49890 date conflicts, 75144 Region/State mismatches, 21943 minors
+2026-10-20 06:09:22,447 | M2 features finished in 0.03s
+2026-10-20 06:09:22,621 | Pipeline complete: 100000 records processed
+2026-10-20 11:50:57,274 | M1 load_file finished in 0.47s
+2026-10-20 11:50:58,055 | M1 quality report finished in 0.27s
+2026-10-20 11:50:58,295 | M2 clean finished in 0.24s
+2026-10-20 11:50:58,295 | M2 Cast date columns to datetime and Postal Code to text
+2026-10-20 11:50:58,295 | M2 Removed 0 duplicate records
+2026-10-20 11:50:58,295 | M2 Handled 0 missing cells (numeric median fill; rows without Sales Date dropped)
+2026-10-20 11:50:58,295 | M2 Created sales_date_dt from Sales Date (authoritative date)
+2026-10-20 11:50:58,295 | M2 Flagged 49890 date conflicts, 75144 Region/State mismatches, 21943 minors
+2026-10-20 11:50:58,335 | M2 features finished in 0.04s
+2026-10-20 11:50:58,609 | Pipeline complete: 100000 records processed
+2026-10-20 11:53:43,046 | M1 load_file finished in 1.29s
+2026-10-20 11:53:44,353 | M1 quality report finished in 0.76s
+2026-10-20 11:53:45,092 | M2 clean finished in 0.74s
+2026-10-20 11:53:45,092 | M2 Cast date columns to datetime and Postal Code to text
+2026-10-20 11:53:45,092 | M2 Removed 0 duplicate records
+2026-10-20 11:53:45,092 | M2 Handled 0 missing cells (numeric median fill; rows without Sales Date dropped)
+2026-10-20 11:53:45,092 | M2 Created sales_date_dt from Sales Date (authoritative date)
+2026-10-20 11:53:45,092 | M2 Flagged 49890 date conflicts, 75144 Region/State mismatches, 21943 minors
+2026-10-20 11:53:45,221 | M2 features finished in 0.13s
+2026-10-20 11:53:46,173 | Pipeline complete: 100000 records processed
+2026-10-29 11:34:50,657 | M1 load_file finished in 1.29s
+2026-10-29 11:34:52,851 | M1 quality report finished in 0.97s
+2026-10-29 11:34:53,768 | M2 clean finished in 0.91s
+2026-10-29 11:34:53,768 | M2 Cast date columns to datetime and Postal Code to text
+2026-10-29 11:34:53,768 | M2 Removed 0 duplicate records
+2026-10-29 11:34:53,768 | M2 Handled 0 missing cells (numeric median fill; rows without Sales Date dropped)
+2026-10-29 11:34:53,769 | M2 Created sales_date_dt from Sales Date (authoritative date)
+2026-10-29 11:34:53,769 | M2 Flagged 49890 date conflicts, 75144 Region/State mismatches, 21943 minors
+2026-10-29 11:34:53,903 | M2 features finished in 0.13s
+2026-10-29 11:34:55,152 | Pipeline complete: 100000 records processed

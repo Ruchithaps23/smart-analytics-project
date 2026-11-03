@@ -1,0 +1,101 @@
+{
+  "summary": {
+    "rows": 100000,
+    "columns": 25,
+    "columns_with_missing": 0,
+    "checks_with_findings": 4
+  },
+  "issues": [
+    {
+      "check": "Missing values",
+      "count": 0,
+      "percent": 0.0,
+      "detail": "cells with no value across all columns",
+      "severity": "ok"
+    },
+    {
+      "check": "Duplicate records",
+      "count": 0,
+      "percent": 0.0,
+      "detail": "fully duplicated rows plus repeated Order IDs",
+      "severity": "ok"
+    },
+    {
+      "check": "Unparseable dates",
+      "count": 0,
+      "percent": 0.0,
+      "detail": "Sales, Order or Ship Date that cannot be read as a date",
+      "severity": "ok"
+    },
+    {
+      "check": "Sales Date earlier than Order Date",
+      "count": 49890,
+      "percent": 49.89,
+      "detail": "sale recorded before the order was placed; Sales Date is used as the authoritative date",
+      "severity": "warning"
+    },
+    {
+      "check": "Ship Date earlier than Order Date",
+      "count": 0,
+      "percent": 0.0,
+      "detail": "shipping before ordering",
+      "severity": "ok"
+    },
+    {
+      "check": "Year differs from Sales Date year",
+      "count": 79888,
+      "percent": 79.89,
+      "detail": "the Year column is not derived from Sales Date; Sales_Year is recomputed",
+      "severity": "warning"
+    },
+    {
+      "check": "Discount outside allowed range",
+      "count": 0,
+      "percent": 0.0,
+      "detail": "discount not between 0.0 and 0.5",
+      "severity": "ok"
+    },
+    {
+      "check": "Quantity below minimum",
+      "count": 0,
+      "percent": 0.0,
+      "detail": "quantity less than 1",
+      "severity": "ok"
+    },
+    {
+      "check": "Profit greater than Sales",
+      "count": 0,
+      "percent": 0.0,
+      "detail": "impossible margin above 100%",
+      "severity": "ok"
+    },
+    {
+      "check": "Negative Sales",
+      "count": 0,
+      "percent": 0.0,
+      "detail": "sales below zero",
+      "severity": "ok"
+    },
+    {
+      "check": "Region inconsistent with State",
+      "count": 75144,
+      "percent": 75.14,
+      "detail": "Region does not match the expected region for the State (mapping in config.yaml)",
+      "severity": "warning"
+    },
+    {
+      "check": "Customers under 18",
+      "count": 21943,
+      "percent": 21.94,
+      "detail": "age at sale date below 18",
+      "severity": "warning"
+    },
+    {
+      "check": "Customers with repeat orders",
+      "count": 0,
+      "percent": 0.0,
+      "detail": "0 means every customer has a single order, so RFM and churn analysis are not possible",
+      "severity": "ok"
+    }
+  ]
+}
